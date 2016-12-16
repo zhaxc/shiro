@@ -11,6 +11,7 @@ public class MongoTest {
 		ListDatabasesIterable<Document> databases = client.listDatabases();
 		for (Document document : databases) {
 			System.out.println(document);
+			System.out.println("github");
 		}
 	}
 }
