@@ -1,15 +1,14 @@
 package com.github.zhangkaitao.shiro.chapter2.authenticator.strategy;
 
+import java.util.Collection;
+
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.pam.AbstractAuthenticationStrategy;
-import org.apache.shiro.authc.pam.AuthenticationStrategy;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.util.CollectionUtils;
-
-import java.util.Collection;
 
 /**
  * <p>User: Zhang Kaitao

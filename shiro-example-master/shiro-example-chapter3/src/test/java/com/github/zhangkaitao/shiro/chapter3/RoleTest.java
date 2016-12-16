@@ -1,6 +1,8 @@
 package com.github.zhangkaitao.shiro.chapter3;
 
 import junit.framework.Assert;
+
+import org.apache.shiro.authz.AuthorizationException;
 import org.apache.shiro.authz.UnauthorizedException;
 import org.junit.Test;
 
@@ -31,9 +33,19 @@ public class RoleTest extends BaseTest {
     public void testCheckRole() {
         login("classpath:shiro-role.ini", "zhang", "123");
         //断言拥有角色：role1
-        subject().checkRole("role1");
+        try {
+			subject().checkRole("role1");
+		} catch (AuthorizationException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
         //断言拥有角色：role1 and role3 失败抛出异常
-        subject().checkRoles("role1", "role3");
+        try {
+			subject().checkRoles("role1", "role3");
+		} catch (AuthorizationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
 }

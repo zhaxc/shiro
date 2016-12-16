@@ -13,6 +13,7 @@ import javax.security.auth.login.AccountLockedException;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 密码重试次数限制
  * <p>User: Zhang Kaitao
  * <p>Date: 14-1-28
  * <p>Version: 1.0

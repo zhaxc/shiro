@@ -19,32 +19,40 @@ import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 /**
- * <p>User: Zhang Kaitao
- * <p>Date: 14-1-27
- * <p>Version: 1.0
+ * 加密/编码测试
+ * 字符串编码/解码
  */
 public class CodecAndCryptoTest {
 
-
-
+	/**
+	 * Base64
+	 */
     @Test
     public void testBase64() {
         String str = "hello";
         String base64Encoded = Base64.encodeToString(str.getBytes());
+        System.out.println(base64Encoded);
         String str2 = Base64.decodeToString(base64Encoded);
         Assert.assertEquals(str, str2);
 
     }
 
+    /**
+     * 16 进制
+     */
     @Test
     public void testHex() {
         String str = "hello";
         String base64Encoded = Hex.encodeToString(str.getBytes());
+        System.out.println(base64Encoded);
         String str2 = new String(Hex.decode(base64Encoded.getBytes()));
         Assert.assertEquals(str, str2);
 
     }
 
+    /**
+     * CodecSupport
+     */
     @Test
     public void testCodecSupport() {
         String str = "hello";
@@ -120,8 +128,16 @@ public class CodecAndCryptoTest {
 
     }
 
-
-
+    /**
+     * Shiro 提供的 HashService 默认实现：DefaultHashService
+     * 1、首先创建一个 DefaultHashService，默认使用 SHA-512 算法；
+	 * 2、可以通过 hashAlgorithmName 属性修改算法；
+	 * 3、可以通过 privateSalt 设置一个私盐，其在散列时自动与用户传入的公盐混合产生一个新盐；
+	 * 4、可以通过 generatePublicSalt 属性在用户没有传入公盐的情况下是否生成公盐；
+	 * 5、可以设置 randomNumberGenerator 用于生成公盐；
+	 * 6、可以设置 hashIterations 属性来修改默认加密迭代次数；
+	 * 7、需要构建一个 HashRequest，传入算法、数据、公盐、迭代次数。
+     */
     @Test
     public void testHashService() {
         DefaultHashService hashService = new DefaultHashService(); //默认算法SHA-512
@@ -135,10 +151,13 @@ public class CodecAndCryptoTest {
                 .setAlgorithmName("MD5").setSource(ByteSource.Util.bytes("hello"))
                 .setSalt(ByteSource.Util.bytes("123")).setIterations(2).build();
         String hex = hashService.computeHash(request).toHex();
-        System.out.println(hex);
+        System.out.println(hex);//fd2b413d4f8c465db16d51ce3e8dc18e
+
     }
 
-
+    //====================================加密/解密==============================================
+    //Shiro 提供对称式加密/解密算法的支持，如 AES、Blowfish 等；当前还没有提供对非对称加密/解密算法支持，未来版本可能提供。
+    
     @Test
     public void testAesCipherService() {
         AesCipherService aesCipherService = new AesCipherService();
@@ -146,14 +165,14 @@ public class CodecAndCryptoTest {
 
         //生成key
         Key key = aesCipherService.generateNewKey();
-
+        //System.out.println(key.getFormat());
         String text = "hello";
 
         //加密
         String encrptText = aesCipherService.encrypt(text.getBytes(), key.getEncoded()).toHex();
         //解密
         String text2 = new String(aesCipherService.decrypt(Hex.decode(encrptText), key.getEncoded()).getBytes());
-
+        System.out.println(encrptText);
         Assert.assertEquals(text, text2);
     }
 
