@@ -1,2 +1,5 @@
 commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>company</message>\r\n<message>commit</message>\r\n<message>c</message>\r\n</messages>
 eclipse.preferences.version=1
+org.eclipse.egit.ui.githistorypage.showallfilter=SHOWALLRESOURCE
+resourcehistory_compare_mode=true
+resourcehistory_show_all_branches=true
