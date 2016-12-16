@@ -3179,3 +3179,7 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2016-12-16 11:21:06,237 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\git\shiro-example-master\shiro-example-chapter5\src\main\resources
 2016-12-16 11:21:06,238 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
 2016-12-16 11:21:06,239 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2016-12-16 11:25:16,595 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-16 11:25:16,596 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\git\shiro-example-master\shiro-example-chapter5\src\main\resources
+2016-12-16 11:25:16,597 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-16 11:25:16,598 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources

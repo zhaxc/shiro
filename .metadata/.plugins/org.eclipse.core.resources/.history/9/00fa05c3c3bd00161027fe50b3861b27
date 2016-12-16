@@ -1,7 +1,0 @@
-package com.github.zhangkaitao.shiro.chapter6.realm;
-
-import org.apache.shiro.realm.AuthorizingRealm;
-
-public class MyUserRealm extends AuthorizingRealm{
-
-}

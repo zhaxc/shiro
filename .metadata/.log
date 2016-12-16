@@ -10744,3 +10744,110 @@ Caused by: org.eclipse.jgit.errors.TransportException: Nothing to fetch.
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-12-16 11:21:06.238
 !MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-12-16 11:25:15.079
+!MESSAGE Branch failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:119)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:171)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.doCheckout(BranchOperationUI.java:143)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.access$2(BranchOperationUI.java:133)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$CheckoutJob.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:328)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:115)
+	... 6 more
+Caused by: java.io.IOException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1374)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:499)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:443)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:271)
+	... 7 more
+Caused by: java.io.IOException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.rename(FileUtils.java:286)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1371)
+	... 10 more
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2016-12-16 11:25:15.079
+!MESSAGE Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:328)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:115)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:171)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.doCheckout(BranchOperationUI.java:143)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.access$2(BranchOperationUI.java:133)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$CheckoutJob.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1374)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:499)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:443)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:271)
+	... 7 more
+Caused by: java.io.IOException: Could not rename file D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6076609241763942317.tmp to D:\git\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.rename(FileUtils.java:286)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1371)
+	... 10 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-12-16 11:25:16.595
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-12-16 11:25:16.597
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2016-12-16 11:25:24.748
+!MESSAGE An exception occurred during push on URI https://github.com/zhaxc/shiro.git: https://github.com/zhaxc/shiro.git: Packing cancelled during objects writing
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/zhaxc/shiro.git: Packing cancelled during objects writing
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:236)
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:804)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:168)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:172)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1272)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:189)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Packing cancelled during objects writing
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.write(PackOutputStream.java:121)
+	at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+	at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+	at java.io.FilterOutputStream.write(FilterOutputStream.java:97)
+	at org.eclipse.jgit.lib.ObjectLoader.copyTo(ObjectLoader.java:266)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeWholeObjectDeflate(PackWriter.java:1577)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1555)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObject(PackWriter.java:1498)
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.writeObject(PackOutputStream.java:164)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.writeObjects(WindowCursor.java:207)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1486)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1474)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writePack(PackWriter.java:1038)
+	at org.eclipse.jgit.transport.BasePackPushConnection.writePack(BasePackPushConnection.java:359)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:216)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-12-16 11:25:24.750
+!MESSAGE Can't connect to any repository: https://github.com/zhaxc/shiro.git (https://github.com/zhaxc/shiro.git: Packing cancelled during objects writing)
+
+!ENTRY org.eclipse.core.resources 4 567 2016-12-16 11:29:00.105
+!MESSAGE The project description file (.project) for 'Servers' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 568 2016-12-16 11:29:12.589
+!MESSAGE Could not write metadata for '/shiro-example-chapter23-nginx'.
+!STACK 0
+java.io.FileNotFoundException: D:\git\.metadata\.plugins\org.eclipse.core.resources\.projects\shiro-example-chapter23-nginx\.markers.snap (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:142)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1769)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1853)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1222)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
