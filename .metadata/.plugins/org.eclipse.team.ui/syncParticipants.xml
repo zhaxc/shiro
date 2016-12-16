@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
-<participant displayName="Git (lanyuan-notebook-3.1v-master)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1481180156927">
+<participant displayName="Git (shiro-example...example-master)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1481850838785">
 <data forceFetch="false" root="false">
-<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="lanyuan-notebook-3.1v-master" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="shiro-example...example-master" startupAction="none">
 <org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
 <org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
 <mappings>
-<resources resourcePath="/lanyuan-notebook-3.1v-master" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter15-client" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter18" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter15-server" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-pom" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter7" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter10" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter3" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-client" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter14" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter9" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter24" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter19" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter20" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-app1" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-core" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter8" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-server" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter11" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter4" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter16" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-app2" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter17-client" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter21" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter5" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter12" resourceType="4"/>
+<resources resourcePath="/shiro-example-master" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter22" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter6" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter17-server" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter13" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter23-nginx" resourceType="4"/>
+<resources resourcePath="/shiro-example-chapter2" resourceType="4"/>
 </mappings>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>

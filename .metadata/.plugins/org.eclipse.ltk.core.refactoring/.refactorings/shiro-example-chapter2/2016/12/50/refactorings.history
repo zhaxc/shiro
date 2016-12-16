@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;shiro-example-chapter2&apos;&#x0D;&#x0A;- Original project: &apos;shiro-example-chapter2&apos;&#x0D;&#x0A;- Original element: &apos;com.github.zhangkaitao.shiro.chapter2.LoginTest.java&apos;" description="Delete element" element1="/src\/test\/java&lt;com.github.zhangkaitao.shiro.chapter2{LoginTest.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1481251974353" subPackages="false" version="1.0"/>
+</session>

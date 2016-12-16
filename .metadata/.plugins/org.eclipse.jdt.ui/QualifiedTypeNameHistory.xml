@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.junit.After"/>
+<fullyQualifiedTypeName name="org.apache.shiro.util.ThreadContext"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.apache.shiro.config.IniSecurityManagerFactory"/>
+<fullyQualifiedTypeName name="org.apache.shiro.io.ResourceUtils"/>
+<fullyQualifiedTypeName name="org.apache.shiro.util.Factory"/>
+<fullyQualifiedTypeName name="org.apache.shiro.SecurityUtils"/>
+<fullyQualifiedTypeName name="org.apache.shiro.authc.UsernamePasswordToken"/>
+<fullyQualifiedTypeName name="org.apache.shiro.realm.AuthorizingRealm"/>
+<fullyQualifiedTypeName name="org.apache.shiro.authc.SimpleAuthenticationInfo"/>
+<fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicInteger"/>
+<fullyQualifiedTypeName name="org.apache.commons.collections.set.SynchronizedSet"/>
+<fullyQualifiedTypeName name="org.apache.shiro.codec.Base64"/>
+<fullyQualifiedTypeName name="org.apache.shiro.crypto.SecureRandomNumberGenerator"/>
+<fullyQualifiedTypeName name="com.github.zhangkaitao.shiro.chapter5.hash.realm.MyRealm"/>
+</qualifiedTypeNameHistroy>

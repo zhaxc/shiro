@@ -1,0 +1,5 @@
+package com.github.zhangkaitao.shiro.chapter6.realm;
+
+public class MyUserRealm {
+
+}
