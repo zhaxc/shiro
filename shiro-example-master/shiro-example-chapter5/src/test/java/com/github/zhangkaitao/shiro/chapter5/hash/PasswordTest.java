@@ -1,16 +1,11 @@
 package com.github.zhangkaitao.shiro.chapter5.hash;
 
 import org.apache.commons.beanutils.BeanUtilsBean;
-import org.apache.commons.beanutils.ConvertUtilsBean2;
 import org.apache.commons.beanutils.converters.AbstractConverter;
 import org.apache.shiro.authc.ExcessiveAttemptsException;
-import org.apache.shiro.codec.CodecException;
-import org.apache.shiro.codec.CodecSupport;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
-import org.apache.shiro.crypto.UnknownAlgorithmException;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
-import org.apache.shiro.util.ByteSource;
 import org.junit.Test;
 
 /**
@@ -85,12 +80,14 @@ public class PasswordTest extends BaseTest {
 
 
     private class EnumConverter extends AbstractConverter {
-        @Override
+        @SuppressWarnings("rawtypes")
+		@Override
         protected String convertToString(final Object value) throws Throwable {
             return ((Enum) value).name();
         }
-        @Override
-        protected Object convertToType(final Class type, final Object value) throws Throwable {
+        @SuppressWarnings("unchecked")
+		@Override
+        protected Object convertToType(@SuppressWarnings("rawtypes") final Class type, final Object value) throws Throwable {
             return Enum.valueOf(type, value.toString());
         }
 
