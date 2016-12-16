@@ -21,8 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher {
 
     private Ehcache passwordRetryCache;
-    private final Integer COUNT = 5;
-    int i = 1;
+
     public RetryLimitHashedCredentialsMatcher() {
         CacheManager cacheManager = CacheManager.newInstance(CacheManager.class.getClassLoader().getResource("ehcache.xml"));
         passwordRetryCache = cacheManager.getCache("passwordRetryCache");
@@ -40,18 +39,14 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
         AtomicInteger retryCount = (AtomicInteger)element.getObjectValue();
         if(retryCount.incrementAndGet() > 5) {
             //if retry count > 5 throw
-            throw new ExcessiveAttemptsException("密码重试5");
-            
+            throw new ExcessiveAttemptsException();
         }
 
         boolean matches = super.doCredentialsMatch(token, info);
         if(matches) {
             //clear retry count
             passwordRetryCache.remove(username);
-        }else {
-        	Integer i = COUNT - retryCount.get();
-			throw new ExcessiveAttemptsException("密码错误还剩"+String.valueOf(i)+"次");
-		}
+        }
         return matches;
     }
 }
